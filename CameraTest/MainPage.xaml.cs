@@ -54,9 +54,9 @@ namespace CameraTest
                     img.Source = ImageSource.FromStream(() => file.GetStream());
 
 
-                    var visionapi = new ComputerVisionClient(new ApiKeyServiceClientCredentials("775a5c37a1d0432795cde90d542cb988"),new System.Net.Http.DelegatingHandler[] { });
+                    var visionapi = new ComputerVisionClient(new ApiKeyServiceClientCredentials("<api key>"),new System.Net.Http.DelegatingHandler[] { });
                     await DisplayAlert("", "sent", "ok");
-                    visionapi.Endpoint = "https://westcentralus.api.cognitive.microsoft.com";
+                    visionapi.Endpoint = "<url>";
 
                     List<VisualFeatureTypes> features = new List<VisualFeatureTypes>()
         {
@@ -119,8 +119,8 @@ namespace CameraTest
 
                      IFirebaseConfig config = new FirebaseConfig
                       {
-                         AuthSecret= "LGSKaFzTOVvqU1jFlgGGVdQkSFcyn7dWms9m8GZA",
-                          BasePath= "https://realtimedbsample-e77ab.firebaseio.com/"
+                         AuthSecret= "",
+                          BasePath= ""
                       };
                       if(config!=null)
                       {
