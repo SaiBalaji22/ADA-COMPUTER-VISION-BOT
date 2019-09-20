@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CameraTest.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <!-- Place new controls here -->
+            <Label Text="ADA IMAGE TAGGING BOT" FontSize="Large" TextColor="DarkViolet" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image x:Name="img" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250" HeightRequest="250"/>
+            <Label x:Name="lbl"  FontSize="Medium"/>
+            <Entry x:Name="searchtxt" WidthRequest="500" Placeholder="Enter the person name in image" TextColor="Black" FontSize="Medium" BackgroundColor="White" TextChanged="Searchtxt_TextChanged"/>
+            <StackLayout Orientation="Horizontal">
+
+
+
+                <Button Text="CLICK" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_Clicked" CornerRadius="500"  BackgroundColor="Violet" TextColor="White"/>
+                <Button Text="CLEAR" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_Clicked_1" CornerRadius="500"  BackgroundColor="Violet" TextColor="White"/>
+                <Button Text="Search" BackgroundColor="Violet" TextColor="White" CornerRadius="500" Clicked="Button_Clicked_2"/>
+                
+
+
+
+
+
+
+
+
+            </StackLayout>
+            
+
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label  Text="brand:" FontSize="Medium" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label x:Name="cap" FontSize="Medium"  TextColor="Black"/>
+
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label  Text="DESCRIPTION:" FontSize="Medium" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label x:Name="descc" FontSize="Medium"  TextColor="Black"/>
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="OBJECTS:" FontSize="Medium" TextColor="Black"/>
+                        <Label x:Name="objs" FontSize="Medium" TextColor="Black"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Categories" FontSize="Medium" TextColor="Black"/>
+                        <Label x:Name="catog" FontSize="Medium" TextColor="Black"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="TAGS" FontSize="Medium" TextColor="Black"/>
+                        <Label x:Name="tg" FontSize="Medium" TextColor="Black"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="FACES" FontSize="Medium" TextColor="Black"/>
+                        <Label x:Name="fc" FontSize="Medium" TextColor="Black"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+            </ScrollView>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
