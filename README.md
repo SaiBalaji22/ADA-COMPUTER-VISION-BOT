@@ -12,3 +12,4 @@ Then the app automatically connect to Firebase server an transfer the data in Fi
 Then the user can search for more information about the picture using  in-built browser in the app which support Google search.
 
 
+![Screenshot_20190920-200142](https://user-images.githubusercontent.com/51410810/65373102-66d5bf00-dc96-11e9-91a2-b7fa4788cad7.png)
