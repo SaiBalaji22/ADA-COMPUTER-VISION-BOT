@@ -1,5 +1,5 @@
 # ADA-COMPUTER-VISION-BOT
-#Developed by Sai Balaji
+# Developed by Sai Balaji
 A cross platform bot for Android,iOS implemented using C#,Xamarin,Azure ComputerVision api and Firebase.
 
 WORKING:
